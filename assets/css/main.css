@@ -1194,8 +1194,15 @@ input, select, textarea {
 
 		header p {
 			display: block;
-			margin: 1em 0 0 0;
+			margin: 0.5em 0 0 0;
+			padding: 0 0 0 0;
+		}
+		/*header h2 {
 			padding: 0 0 0.5em 0;
+		}*/
+
+		.h2-large {
+			padding: 0.5em 0 0.2em 0;
 		}
 
 	footer {
@@ -2043,7 +2050,7 @@ input, select, textarea {
 
 		.main.style3 {
 			text-align: center;
-			padding: 6em 0 6em 0;
+			padding: 3em 0 6em 0;
 		}
 
 			.main.style3 .content > header {
@@ -2137,7 +2144,7 @@ input, select, textarea {
 				}
 
 				.main.style2 .button.anchored {
-					display: none;
+					/*display: none;*/
 				}
 
 				.main.style2 .content {
@@ -2184,7 +2191,7 @@ input, select, textarea {
 		margin: 0;
 		line-height: 1em;
 		padding: 1.5em;
-		background: #39454b;
+		background: #fff; /*#39454b;*/
 		color: rgba(185, 186, 187, 0.5);
 		overflow: hidden;
 	}
@@ -2281,7 +2288,7 @@ input, select, textarea {
 
 	#contact {
 		overflow: hidden;
-		padding-bottom: 0;
+		/*padding-bottom: 0;*/
 	}
 
 		#contact .box {

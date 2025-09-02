@@ -4,6 +4,22 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+function decodeEmail(encoded) {
+    var email = "";
+    // La boucle commence au dernier caractère et se termine au premier (index 0)
+    for (var i = encoded.length - 1; i >= 0; i--) {
+        // Décode le caractère
+        email += String.fromCharCode(encoded.charCodeAt(i) - 3);
+    }
+    return email;
+};
+
+// Exemple d'utilisation
+// encodeURIComponent('contact@monsite.com').split('').reverse().join('');
+// Ce code génère le hash à utiliser : moc.etisnom@tcatnoc
+document.getElementById('email-link').innerHTML = decodeEmail('prf1oldpjCrus1huxdihrq');
+document.getElementById('email-link').href = 'mailto:' + decodeEmail('prf1oldpjCrus1huxdihrq');
+
 (function($) {
 
 	var	$window = $(window),

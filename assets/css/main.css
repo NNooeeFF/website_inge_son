@@ -722,6 +722,27 @@ input, select, textarea {
 			left: 50%;
 		}
 
+
+		/*  Ajout classe anchored-round pour le bouton d'intro */
+
+		input[type="button"].down.anchored-round,
+			.button.down.anchored-round,
+			button.down.anchored-round {
+				bottom: 0;
+			}
+
+		input[type="button"].anchored-round,
+		.button.anchored-round,
+		button.anchored-round {
+			/*position: absolute;*/
+			/*left: 50%;*/
+			margin-top: 2em;
+			
+		}
+
+		/*  */
+
+
 		input[type="button"]:hover,
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -1206,8 +1227,9 @@ input, select, textarea {
 		}
 
 	footer {
-		margin-top: 2em;
+		padding: 0.5em 3em 0.5em 3em;
 	}
+
 
 /* Table */
 
@@ -1897,8 +1919,8 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#header {
-				height: 2.5em;
-				line-height: 2.5em;
+				height: 3em;
+				line-height: 3em;
 			}
 
 				#header h1 {
@@ -1906,12 +1928,12 @@ input, select, textarea {
 					position: relative;
 					left: 0;
 					top: 0;
-					height: 2.5em;
-					line-height: 2.5em;
+					height: 3em;
+					line-height: 3em;
 				}
 
 					#header h1 a {
-						font-size: 1em;
+						font-size: 1.3em;
 					}
 
 				#header nav {
@@ -1924,14 +1946,14 @@ input, select, textarea {
 		padding-top: 3em;
 	}
 
-		@media screen and (max-width: 736px) {
+/*		@media screen and (max-width: 736px) {
 
 			body {
 				padding-top: 2.5em;
 			}
 
 		}
-
+*/
 /* Main */
 
 	.main {
@@ -2128,6 +2150,10 @@ input, select, textarea {
 			}
 
 			.main.style1 {
+				/*-moz-align-items: top;
+				-webkit-align-items: top;
+				-ms-align-items: top;
+				align-items: flex-start;*/
 				padding: 4em 15px 4em 15px;
 			}
 
